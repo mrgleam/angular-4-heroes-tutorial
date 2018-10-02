@@ -1,5 +1,5 @@
 import { AppComponent } from './app.component';
-import {RouterTestingModule} from '@angular/router/testing'
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By }           from '@angular/platform-browser';
@@ -27,7 +27,7 @@ describe('AppComponent', function () {
   it('should display original title', () => {
     fixture.detectChanges();
     const h1 = de.nativeElement;
-    expect(h1.innerText).toContain("Heroes");
+    expect(h1.innerText).toContain('Heroes');
   });
 
   it('should create component', () => expect(comp).toBeDefined() );
